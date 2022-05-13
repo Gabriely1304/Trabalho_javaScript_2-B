@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Planilha de calculos</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Planilha de Cálculos</h1>
+        <table>
+            <tr>
+                <th id="colunatres">Código</th>
+                <th id="colunatres">Descrição</th>
+                <th id="colunatres">Valor</th>
+            </tr>
+            <tr>
+                <th id="receitas" colspan="3" align="center">RECEITAS</th>
+            </tr>
+            <tr>
+                <td id="numeros">1</td>
+                <td id="colunatres">Valor Base(R$)</td>
+                <td><input type="number" form="formulario" id="n1"></td>
+            </tr>
+            <tr>
+                <td id="numeros">2</td>
+                <td id="colunatres">Ajuda com transporte(R$)</td>
+                <td><input type="number" form="formulario" id="n2"></td>
+            </tr>
+            <tr>
+                <td id="numeros">3</td>
+                <td id="colunatres">Ajuda alimentação(R$)</td>
+                <td><input type="number" form="formulario" id="n3"></td>
+            </tr>
+            <tr>
+                <td id="numeros">4</td>
+                <td id="colunadois">Receita Total(R$)</td>
+                <td><input id="receba" form="formulario" name="receba" type="text" disabled=""></td>
+            </tr>
+
+
+            <tr>
+                <th id="receitas" colspan="3" align="center">DESCONTOS</th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td id="numeros">5</td>
+                <td id="colunatres">Desconto de Automóvel(R$)</td>
+                <td><input class="desconto" type="number" form="formulario" id="n4"></td>
+            </tr>
+            <tr>
+                <td id="numeros">6</td>
+                <td id="colunatres">Faltas(R$)</td>
+                <td><input class="faltas" type="number" form="formulario" id="n5"></td>
+            </tr>
+            <tr>
+                <td id="numeros">7</td>
+                <td id="colunadois">Descontos Total(R$)</td>
+                <td><input id="receba2" name="receba2" type="text" form="formulario" disabled=""></td>
+            </tr>
+            <tr>
+                <th id="receitas" colspan="3" align="center">TOTAL</th>
+            </tr>
+            <tr>
+                <td id="numeros">8</td>
+                <td id="colunadois">Total(R$)</td>
+                <td><input id="receba3" name="receba3" form="formulario" type="text" disabled></td>
+            </tr>
+
+        </table>
+        <br>
+        <form action="" id="formulario">
+            <button type="submit" id="enviar">Calcular</button>
+            <input id="limpar" type="reset" value="limpar">
+        </form>
+        <script src="js/index.js">
+        </script>
+
+</body>
+</div>
+
+</html>
